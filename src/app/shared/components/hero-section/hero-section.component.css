@@ -1,0 +1,9 @@
+.hero-bg{
+    background: url('../../../../assets/img/wallpapers/Wall_1.jpg');
+    background-size: cover;
+    background-position: right;
+}
+
+.stock{
+    -webkit-text-stroke: 1px #fff;
+}
