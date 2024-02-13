@@ -1,4 +1,4 @@
-<header class="fixed animate-fade-down top-0 w-full z-20 overflow-hidden shadow py-5 bg-white">
+<header class="fixed top-0 animate-fade-down  w-full z-20 overflow-hidden shadow py-5 bg-white">
     <div class="max-w-[110rem] w-full mx-auto relative px-4 lg:px-6">
       <nav class="md:flex justify-between items-center">
         <div class="flex justify-between items-center">
@@ -10,6 +10,7 @@
            <div class="flex items-center gap-2">
 
             <div class="leading-normal">
+            
               <a class="text-xl md:text-3xl font-bold"><span class="bg-orange-500 py-1 px-4 rounded-2xl text-white">Maya</span> Tattoo Studio</a>
             </div>
            </div>
@@ -25,12 +26,12 @@
           
         </div>
         <div class='hidden mt-2 md:mt-0 md:flex items-center space-y-6 md:space-y-0 gap-10 2xl:gap-16 uppercase' [class.hidden]="!menuOpen" id="menu">
-            <a href="index.html" class="font-semibold text-xl block hover:text-orange-500" >Home</a>
-            <a href="index1.html" class="font-semibold text-xl block hover:text-orange-500" >Services</a>
-            <a href="aboutourproduct.html" class="font-semibold text-xl block hover:text-orange-500" >Gallery</a>
-            <a href="aboutourproduct.html" class="font-semibold text-xl block hover:text-orange-500" >ARTISTS</a>
-            <a href="aboutourproduct.html" class="font-semibold text-xl block hover:text-orange-500" >ABOUT</a>
-            <a href="aboutourproduct.html" class="font-semibold text-xl block hover:text-orange-500" >CONTACT</a>
+            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >Home</a>
+            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >Services</a>
+            <a  [routerLink]="['/gallery']" class="font-semibold text-xl block hover:text-orange-500" >Gallery</a>
+            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >ARTISTS</a>
+            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >ABOUT</a>
+            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >CONTACT</a>
 
         </div>
         <div class=" items-center justify-center hidden md:block"> 
