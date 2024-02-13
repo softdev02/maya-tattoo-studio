@@ -26,12 +26,12 @@
           
         </div>
         <div class='hidden mt-2 md:mt-0 md:flex items-center space-y-6 md:space-y-0 gap-10 2xl:gap-16 uppercase' [class.hidden]="!menuOpen" id="menu">
-            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >Home</a>
-            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >Services</a>
-            <a  [routerLink]="['/gallery']" class="font-semibold text-xl block hover:text-orange-500" >Gallery</a>
-            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >ARTISTS</a>
-            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >ABOUT</a>
-            <a [routerLink]="['/']" class="font-semibold text-xl block hover:text-orange-500" >CONTACT</a>
+            <a href="#home" class="font-semibold text-xl block hover:text-orange-500" >Home</a>
+            <a href="#our-services" class="font-semibold text-xl block hover:text-orange-500" >Services</a>
+            <a [routerLink]="['/gallery']" class="font-semibold text-xl block hover:text-orange-500" >Gallery</a>
+            <a href="#our-artists" class="font-semibold text-xl block hover:text-orange-500" >ARTISTS</a>
+            <a href="#about-us" class="font-semibold text-xl block hover:text-orange-500" >ABOUT</a>
+            <a href="#contact" class="font-semibold text-xl block hover:text-orange-500" >CONTACT</a>
 
         </div>
         <div class=" items-center justify-center hidden md:block"> 
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div>
-          <button class="py-2 px-4 bg-orange-500 text-white rounded-xl">View our works</button>
+          <a [routerLink]="['/gallery']" (click)="toggleOffcanvas()" class="py-2 px-4 bg-orange-500 text-white rounded-xl">View our works</a>
         </div>
         <div class="absolute top-[20%] opacity-15">
            <img src="./assets/h1-img-2 1.png" alt="" srcset="">
