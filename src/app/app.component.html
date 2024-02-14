@@ -3,3 +3,28 @@
     <router-outlet/>
   </main>
 <app-footer/>
+
+<div id="chat-box" class="animate-fade-left animate-duration-1000 animate-delay-[2000ms]">
+  <div id="chat-top">
+      <img src="./assets/img/logo/Sparkle-logo-icon.png" alt="" class="chat-logo" width="40px">
+      <span class="ml-1">Maya tattoo studio</span>
+      <button class="btntext-white" id="chat-top-right" (click)="close_chart_box()"><i class="fi fi-sr-circle-xmark"></i></button>
+  </div>
+  <div id="chat-msg" class="mb-3">
+      <p>
+          <span class="comp">Maya tattoo studio</span> <br>
+          Hi there! <br>
+          How can I help you?
+      </p>
+      <div id="chat-form">
+          <form class="chat-in flex items-center mt-4" #formdata="ngForm" (submit)="generateWhatsAppLink(formdata)" ngNativeValidate>
+            <input type="text" id="whats-in" name="message" #data="ngModel" ngModel placeholder="Send Your Message..." required>
+            <button type="submit" role="button" id="send-btn" target="_blank" rel="noopener noreferrer">
+              <i class="fi fi-ss-paper-plane-top text-2xl bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-300"></i>
+            </button>
+          </form>
+      </div>
+  </div>
+</div>
+
+<button class="bg-[#25D366] text-white inline-flex items-center gap-x-2 rounded-full px-4 md:px-3 py-2 md:py-0 animate-flip-down animate-once animate-duration-1000 animate-delay-[1500ms] fixed right-[2%] bottom-[5%] z-[9999]" id="whats-chat" (click)="chart_box()"> <i class="fi fi-brands-whatsapp mt-2 text-xl"></i> <span class="hidden md:block"> Chart with us</span> </button>
